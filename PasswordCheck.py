@@ -13,6 +13,6 @@ def password_policy_check(u, p):
 try:
     username = input("Zadej uzivatelske jmeno: ")
     password = input("Zadej heslo: ")
-    print(password_policy_check(username, password))
+    print("Je heslo validni: " + str(password_policy_check(username, password)))
 except Exception as e:
     print(e)
